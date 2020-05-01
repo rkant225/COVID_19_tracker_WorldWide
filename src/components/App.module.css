@@ -1,0 +1,18 @@
+body{
+    color : black;
+    background-image: linear-gradient(rgba(27, 27, 209, 0.589), rgb(231, 231, 247));
+}
+
+.container{
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 100px;
+    width: 150px;
+    border-radius: 600px;
+}
