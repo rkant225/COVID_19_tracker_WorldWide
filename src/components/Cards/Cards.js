@@ -28,7 +28,7 @@ const Cards = (props) => {
             <CardContent>
                 <Typography color="textSecondary" gutterBottom>Recovered</Typography>
                 <Typography variant="h5"><CountUp start={0} end={recovered.value} duration={2.0} separator={','}></CountUp></Typography>
-                <Typography color="textSecondary">Real Date</Typography>
+                <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                 <Typography variant="body2" gutterBottom>Number of recoveries from COVID-19</Typography>
             </CardContent>
         </Grid>
@@ -37,7 +37,7 @@ const Cards = (props) => {
             <CardContent>
                 <Typography color="textSecondary" gutterBottom>Deaths</Typography>
                 <Typography variant="h5"><CountUp start={0} end={deaths.value} duration={2.0} separator={','}></CountUp></Typography>
-                <Typography color="textSecondary">Real Date</Typography>
+                <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                 <Typography variant="body2" gutterBottom>Number of deaths caused by COVID-19</Typography>
             </CardContent>
         </Grid>
